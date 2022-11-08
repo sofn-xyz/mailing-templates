@@ -2,7 +2,7 @@
  * If you want to use local assets while developing new templates,
  * comment out the following line.
  *
- * NOTE: This is cause the email linter to throw errors
+ * NOTE: This will cause the email linter to throw errors
  */
 const ASSET_URL = "https://lancey-mailing.vercel.app";
 
