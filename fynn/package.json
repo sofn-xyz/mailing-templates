@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn mailing"
+    "build": "yarn mailing server build && cp -r ./emails/assets ./.mailing/build",
+    "dev": "npx mailing server scaffold && ln -sf ../../emails/assets ./.mailing/public && yarn mailing preview"
   },
   "dependencies": {
     "mailing-core": "^0.8.11",
