@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn mailing server build && cp -r ./emails/assets ./.mailing/build",
-    "dev": "npx mailing server scaffold && ln -sf ../../emails/assets ./.mailing/public && yarn mailing preview"
+    "dev": "yarn mailing",
+    "dev:local-assets": "npx mailing server scaffold && ln -sf ../../emails/assets ./.mailing/public && LOCAL_ASSETS=true yarn mailing preview"
   },
   "dependencies": {
     "mailing-core": "^0.8.11",
