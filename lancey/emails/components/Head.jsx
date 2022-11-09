@@ -58,7 +58,7 @@ export default function Head({ children, style }) {
             font-size: 30px !important;
           }
           .header-xl div{
-            font-size: 48px !important;
+            font-size: 36px !important;
           }
           .desktop-spacer div {
             height: 0 !important;

@@ -17,6 +17,16 @@ export default function NewFeature() {
       .main-section {
         padding-top: 32px;
       }
+
+      .header div {
+        font-size: 40px !important;
+      }
+
+      @media (max-width:480px) {
+        .header div {
+          font-size: 36px !important;
+        }
+      }
     `}
     >
       <MjmlText
@@ -28,7 +38,7 @@ export default function NewFeature() {
       >
         Introducing
       </MjmlText>
-      <Headline align="center" cssClass="header-lg" paddingBottom="32px">
+      <Headline align="center" cssClass="header" paddingBottom="32px">
         A/B Testing
       </Headline>
       <DesktopSpacer height="8px" />
