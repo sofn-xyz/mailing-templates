@@ -8,10 +8,7 @@ import assetUrl from "./util/assetUrl";
 export default function SuccessfulIntegration({ integration }) {
   return (
     <BaseLayout>
-      <IconImage
-        src={assetUrl("/assets/green-check.png")}
-        alt="checkmark icon"
-      />
+      <IconImage src={assetUrl("/assets/green-check.png")} alt="" />
       <Headline cssClass="header-lg">
         Your {integration} integration is live
       </Headline>

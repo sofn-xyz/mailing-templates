@@ -8,10 +8,7 @@ import assetUrl from "./util/assetUrl";
 export default function UsageExceeded() {
   return (
     <BaseLayout>
-      <IconImage
-        src={assetUrl("/assets/exclamation.png")}
-        alt="exclamation icon"
-      />
+      <IconImage src={assetUrl("/assets/exclamation.png")} alt="" />
       <Headline cssClass="header-lg" maxWidth="500px">
         You’ve reached the limit for your plan
       </Headline>
