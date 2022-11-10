@@ -8,7 +8,7 @@ import assetUrl from "./util/assetUrl";
 export default function TrialEnded() {
   return (
     <BaseLayout>
-      <IconImage src={assetUrl("/assets/clock.png")} alt="clock icon" />
+      <IconImage src={assetUrl("/assets/clock.png")} alt="" />
       <Headline cssClass="header-lg" maxWidth="340px">
         Your Lancey trial has ended
       </Headline>
