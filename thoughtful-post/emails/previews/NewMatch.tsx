@@ -17,7 +17,7 @@ const gifts = [
     href: "https://thoughtfulpost.com",
     src: "https://via.placeholder.com/303x196/00FF00?text=3",
     price: 20.99,
-    title: "A gift title",
+    title: "A different gift title",
   },
   {
     href: "https://thoughtfulpost.com",
