@@ -19,7 +19,7 @@ const cssHelpers = `
     overflow: hidden;
     mso-hide: all;
   }
-  .lg\\:hidden {
+  .lg-hidden {
     display: none;
     max-width: 0px;
     max-height: 0px;
@@ -33,14 +33,14 @@ const cssHelpers = `
       padding-left: ${spacing.desktopGutter}px !important;
       padding-right: ${spacing.desktopGutter}px !important;
     }
-    .sm\\:hidden {
+    .sm-hidden {
       display: none;
       max-width: 0px;
       max-height: 0px;
       overflow: hidden;
       mso-hide: all;
     }
-    .lg\\:hidden {
+    .lg-hidden {
       display: block !important;
       max-width: none !important;
       max-height: none !important;

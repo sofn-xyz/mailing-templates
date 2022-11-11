@@ -15,10 +15,10 @@ export default function Heading({ lg, sm, ...props }: HeadingProps) {
 
   return (
     <>
-      <Text {...defaultProps} {...props} {...lg} cssClass="lg:hidden">
+      <Text {...defaultProps} {...props} {...lg} cssClass="lg-hidden">
         {props.children}
       </Text>
-      <Text {...defaultProps} {...props} {...sm} cssClass="sm:hidden">
+      <Text {...defaultProps} {...props} {...sm} cssClass="sm-hidden">
         {props.children}
       </Text>
     </>

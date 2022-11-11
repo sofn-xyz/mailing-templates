@@ -8,8 +8,8 @@ type SpacerProps = {
 export default function Spacer({ sm, lg, ...props }: SpacerProps) {
   return (
     <>
-      <MjmlSpacer {...props} {...lg} cssClass="lg:hidden" />
-      <MjmlSpacer {...props} {...sm} cssClass="sm:hidden" />
+      <MjmlSpacer {...props} {...lg} cssClass="lg-hidden" />
+      <MjmlSpacer {...props} {...sm} cssClass="sm-hidden" />
     </>
   );
 }
