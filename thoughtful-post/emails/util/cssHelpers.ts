@@ -13,10 +13,18 @@ const cssHelpers = `
     white-space: nowrap;
   }
   .hidden {
-    display: none !important;
+    display: none;
+    max-width: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    mso-hide: all;
   }
   .lg\\:hidden {
-    display: none !important;
+    display: none;
+    max-width: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    mso-hide: all;
   }
 
   @media (min-width: ${screens.xs}) {
@@ -26,10 +34,18 @@ const cssHelpers = `
       padding-right: ${spacing.desktopGutter}px !important;
     }
     .sm\\:hidden {
-      display: none !important;
+      display: none;
+      max-width: 0px;
+      max-height: 0px;
+      overflow: hidden;
+      mso-hide: all;
     }
     .lg\\:hidden {
       display: block !important;
+      max-width: none !important;
+      max-height: none !important;
+      overflow: visible !important;
+      mso-hide: none !important;
     }
   }
   `;
