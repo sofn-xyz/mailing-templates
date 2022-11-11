@@ -1,4 +1,10 @@
-# Lancey-Mailing
+# Lancey + Mailing
+
+Templates for [Lancey](https://www.lancey.io)
+
+Built with [Mailing](https://www.mailing.run)
+
+Live at https://lancey-mailing.vercel.app/
 
 ## Local development
 
@@ -6,11 +12,3 @@
 yarn install
 yarn mailing
 ```
-
-## See it Live
-
-https://lancey-mailing.vercel.app/
-
-## Designs
-
-https://www.figma.com/file/SqR9kIYQ2FKNzSKRFtJ850/lancey-emails

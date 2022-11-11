@@ -19,10 +19,10 @@ export default function NewFeature() {
       }
 
       .header div {
-        font-size: 40px !important;
+        font-size: ${fontSize.lg}px !important;
       }
 
-      @media (max-width:480px) {
+      @media (max-width: 480px) {
         .header div {
           font-size: 36px !important;
         }
@@ -46,7 +46,7 @@ export default function NewFeature() {
         width="440px"
         paddingBottom="32px"
         src={assetUrl("/assets/ab-test.png")}
-        alt="abtest"
+        alt="ab test"
       />
       <DesktopSpacer height="8px" />
 

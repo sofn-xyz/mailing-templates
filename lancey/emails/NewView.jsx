@@ -8,7 +8,7 @@ import assetUrl from "./util/assetUrl";
 export default function NewView({ name }) {
   return (
     <BaseLayout>
-      <IconImage src={assetUrl("/assets/sparkle.png")} alt="sparkle icon" />
+      <IconImage src={assetUrl("/assets/sparkle.png")} alt="" />
       <Headline cssClass="header-lg" maxWidth="500px">
         Lancey Demo has a new view by {name}
       </Headline>

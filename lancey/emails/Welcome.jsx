@@ -12,7 +12,7 @@ import DesktopSpacer from "./components/DesktopSpacer";
 export default function Welcome() {
   return (
     <BaseLayout>
-      <IconImage src={assetUrl("/assets/smirk.png")} alt="smirking icon" />
+      <IconImage src={assetUrl("/assets/smirk.png")} alt="" />
       <DesktopSpacer height="8px" />
 
       <Headline cssClass="header-xl">Welcome</Headline>

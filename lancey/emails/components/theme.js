@@ -28,7 +28,7 @@ export const borderRadius = {
 };
 
 export const fontFamily = {
-  sans: "Montserrat",
+  sans: "Montserrat, system-ui, -apple-system, sans-serif",
 };
 
 export const spacing = {
