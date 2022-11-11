@@ -46,7 +46,7 @@ export default function Footer() {
                       </a>
                     </td>
                     <td width="50%">
-                      <a href="https://www.facebook.com/people/Thoughtful-Post/100083722654732/">
+                      <a href="https://www.instagram.com/thoughtfulpostapp/">
                         <img
                           src={assetUrl("/assets/instagram.png")}
                           alt="Instagram Logo"
