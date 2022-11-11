@@ -154,14 +154,14 @@ type CardsProps = {
 export default function Cards({ cards }: CardsProps) {
   return (
     <>
-      <MjmlSection backgroundColor={colors.white} cssClass="gutter">
+      <MjmlSection backgroundColor={colors.white} cssClass="card-gutter">
         {<Card card={cards[0]} />}
         {<Card card={cards[1]} />}
       </MjmlSection>
       <MjmlSection
         backgroundColor={colors.white}
         paddingBottom={40}
-        cssClass="gutter"
+        cssClass="card-gutter"
       >
         {<Card card={cards[2]} />}
         {<Card card={cards[3]} />}

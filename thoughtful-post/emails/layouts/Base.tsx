@@ -42,9 +42,17 @@ export default function Base({ children }: any) {
             border-radius: 0 0 ${borderRadius.base}px ${borderRadius.base}px;
             padding-bottom: 24px !important;
           }
+          .card-gutter {
+            padding-left: ${spacing.mobileGutter - 10}px !important;
+            padding-right: ${spacing.mobileGutter - 10}px !important;
+          }
           @media (min-width: ${screens.xs}) {
             .top-section {
               padding-top: ${spacing.desktopGutter}px !important;
+            }
+            .card-gutter {
+              padding-left: ${spacing.desktopGutter - 10}px !important;
+              padding-right: ${spacing.desktopGutter - 10}px !important;
             }
           }
 
@@ -56,7 +64,7 @@ export default function Base({ children }: any) {
       </MjmlHead>
 
       <MjmlBody width={640} backgroundColor={colors.backgroundColor}>
-        <MjmlWrapper fullWidth={true} padding="24px 20px">
+        <MjmlWrapper fullWidth={true} padding="24px 16px">
           <MjmlSection
             backgroundColor={colors.white}
             cssClass="top-section gutter"
