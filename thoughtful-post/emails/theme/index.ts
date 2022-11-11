@@ -51,3 +51,12 @@ export const screens = {
   xs: "480px",
   sm: "640px",
 };
+
+export const themeDefaults = {
+  fontFamily: fontFamily.sans,
+  lineHeight: lineHeight.base,
+  fontWeight: fontWeight.normal,
+  fontSize: fontSize.base,
+  color: colors.black,
+  padding: 0,
+};

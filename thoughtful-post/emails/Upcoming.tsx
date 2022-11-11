@@ -1,19 +1,26 @@
+import { MjmlSection, MjmlColumn, MjmlImage } from "mjml-react";
 import Base from "./layouts/Base";
 import Button from "./components/Button";
 import Heading from "./components/Heading";
-import { fontSize, colors } from "./theme";
-import { MjmlSection, MjmlColumn, MjmlImage } from "mjml-react";
 import Cards, { type Card } from "./components/Cards";
-import P from "./components/P";
+import Text from "./components/Text";
+import { fontSize, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import Checklist from "./components/Checklist";
 
 type UpcomingProps = {
   name: string;
-  withList?: boolean;
   gifts: Card[];
+  birthday: string;
+  withList?: boolean;
 };
 
-export default function Upcoming({ name, withList, gifts }: UpcomingProps) {
+export default function Upcoming({
+  name,
+  withList,
+  gifts,
+  birthday,
+}: UpcomingProps) {
   return (
     <Base>
       <MjmlSection
@@ -37,15 +44,29 @@ export default function Upcoming({ name, withList, gifts }: UpcomingProps) {
           >
             {name}’s birthday is soon
           </Heading>
-          <P align="center" paddingBottom={32}>
+          <Text align="center" maxWidth={390} paddingBottom={24}>
             <strong>Only 1 week left</strong> until {name}’s birthday on{" "}
-            <span className="no-wrap">Fri, Nov 4.</span> Let’s find the perfect
+            <span className="no-wrap">{birthday}</span> Let’s find the perfect
             gift.
-          </P>
+          </Text>
+
           {withList ? (
-            <Button>Find a gift now</Button>
+            <>
+              <Checklist
+                items={[
+                  { text: "A complete task", checked: true },
+                  { text: "A incomplete task", checked: false },
+                  { text: "A incomplete task", checked: false },
+                ]}
+              />
+              <Button href="https://thoughtfulpost.com" paddingTop={32}>
+                Find a gift now
+              </Button>
+            </>
           ) : (
-            <Button>See all gifts for {name}</Button>
+            <Button href="https://thoughtfulpost.com" paddingTop={8}>
+              See all gifts for {name}
+            </Button>
           )}
         </MjmlColumn>
       </MjmlSection>
@@ -72,7 +93,7 @@ export default function Upcoming({ name, withList, gifts }: UpcomingProps) {
 
       <MjmlSection backgroundColor={colors.white} paddingBottom={48}>
         <MjmlColumn>
-          <Button>Browse more gifts</Button>
+          <Button href="https://thoughtfulpost.com">Browse more gifts</Button>
         </MjmlColumn>
       </MjmlSection>
     </Base>

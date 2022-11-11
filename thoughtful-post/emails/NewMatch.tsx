@@ -1,18 +1,19 @@
+import { MjmlSection, MjmlColumn, MjmlImage } from "mjml-react";
 import Base from "./layouts/Base";
 import Button from "./components/Button";
 import Heading from "./components/Heading";
-import { fontSize, colors } from "./theme";
-import { MjmlSection, MjmlColumn, MjmlImage } from "mjml-react";
 import Cards, { type Card } from "./components/Cards";
-import P from "./components/P";
+import Text from "./components/Text";
+import { fontSize, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
 
 type UpcomingProps = {
   name: string;
+  birthday: string;
   gifts: Card[];
 };
 
-export default function Upcoming({ name, gifts }: UpcomingProps) {
+export default function Upcoming({ name, gifts, birthday }: UpcomingProps) {
   return (
     <Base>
       <MjmlSection
@@ -36,11 +37,11 @@ export default function Upcoming({ name, gifts }: UpcomingProps) {
           >
             We found 4 more gifts for {name}
           </Heading>
-          <P align="center">
+          <Text maxWidth={460} align="center">
             {name}'s birthday is on{" "}
-            <strong className="no-wrap">Fri, Nov 4.</strong> That's in 2 weeks!
+            <strong className="no-wrap">{birthday}</strong>. That's in 2 weeks!
             Based on what you told us, {name} might like these gifts.
-          </P>
+          </Text>
         </MjmlColumn>
       </MjmlSection>
       <Cards cards={gifts} />

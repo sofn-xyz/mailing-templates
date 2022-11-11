@@ -1,11 +1,5 @@
 import { MjmlSection, MjmlColumn, MjmlRaw, MjmlImage } from "mjml-react";
-import {
-  borderRadius,
-  colors,
-  fontFamily,
-  fontSize,
-  fontWeight,
-} from "../theme";
+import { borderRadius, colors, fontFamily, fontSize } from "../theme";
 import assetUrl from "../util/assetUrl";
 
 export type Card = {
@@ -24,7 +18,7 @@ function Card({ card }: CardProps) {
   }).format(card.price);
 
   return (
-    <MjmlColumn cssClass="COLUMN COLUMN" padding={10}>
+    <MjmlColumn padding={10}>
       <MjmlRaw>
         <tr>
           <td align="center">
@@ -131,7 +125,11 @@ function Card({ card }: CardProps) {
                               src={assetUrl("/assets/cart.png")}
                               width="20px"
                               height="20px"
-                              style={{ paddingRight: 8 }}
+                              style={{
+                                verticalAlign: "text-bottom",
+                                paddingBottom: 4,
+                                paddingRight: 8,
+                              }}
                             />
                             <strong>Buy</strong>
                           </span>

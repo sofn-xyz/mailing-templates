@@ -1,5 +1,3 @@
-import { colors } from "../theme";
-
 // Returns a color (black or white) that is visually accessible on top of the given background color.
 export default function accessibleColor(
   color: string,

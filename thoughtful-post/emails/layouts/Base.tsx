@@ -16,15 +16,14 @@ import Footer from "../components/Footer";
 import Link from "../components/Link";
 import {
   colors,
-  fontFamily,
-  lineHeight,
   fontSize,
-  fontWeight,
   borderRadius,
   spacing,
   screens,
+  themeDefaults,
 } from "../theme";
 import assetUrl from "../util/assetUrl";
+import cssHelpers from "../util/cssHelpers";
 
 export default function Base({ children }: any) {
   return (
@@ -43,52 +42,16 @@ export default function Base({ children }: any) {
             border-radius: 0 0 ${borderRadius.base}px ${borderRadius.base}px;
             padding-bottom: 24px !important;
           }
-
-          /* Utility classes */
-          .gutter {
-            padding-left: ${spacing.mobileGutter}px !important;
-            padding-right: ${spacing.mobileGutter}px !important;
-          }
-          .border-top {
-            border-top: 2px solid ${colors.gray200};
-          }
-          .no-wrap {
-            white-space: nowrap;
-          }
-          .hidden {
-            display: none !important;
-          }
-          .lg\\:hidden {
-            display: none !important;
-          }
-
           @media (min-width: ${screens.xs}) {
             .top-section {
               padding-top: ${spacing.desktopGutter}px !important;
             }
-
-            /* Utility classes */
-            .gutter {
-              padding-left: ${spacing.desktopGutter}px !important;
-              padding-right: ${spacing.desktopGutter}px !important;
-            }
-            .sm\\:hidden {
-              display: none !important;
-            }
-            .lg\\:hidden {
-              display: block !important;
-            }
           }
+
+          ${cssHelpers}
       `}</MjmlStyle>
         <MjmlAttributes>
-          <MjmlAll
-            fontFamily={fontFamily.sans}
-            lineHeight={lineHeight.base}
-            fontWeight={fontWeight.normal}
-            fontSize={fontSize.base}
-            color={colors.black}
-            padding={0}
-          />
+          <MjmlAll {...themeDefaults} />
         </MjmlAttributes>
       </MjmlHead>
 
@@ -122,7 +85,7 @@ export default function Base({ children }: any) {
                 <Link
                   color={colors.black}
                   textDecoration="underline"
-                  href="https://thoughtfulpost.com"
+                  href="https://thoughtfulpost.typeform.com/contact-us"
                 >
                   Reach out
                 </Link>{" "}

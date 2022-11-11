@@ -1,9 +1,9 @@
+import { MjmlSection, MjmlColumn, MjmlImage } from "mjml-react";
 import Base from "./layouts/Base";
 import Button from "./components/Button";
 import Heading from "./components/Heading";
+import Text from "./components/Text";
 import { fontSize, colors } from "./theme";
-import { MjmlSection, MjmlColumn, MjmlImage } from "mjml-react";
-import P from "./components/P";
 import assetUrl from "./util/assetUrl";
 
 type SurveyProps = {
@@ -35,11 +35,11 @@ export default function Survey({ name, userName }: SurveyProps) {
           >
             Find the perfect gift for {name}
           </Heading>
-          <P align="center" paddingBottom={32}>
+          <Text align="center" paddingBottom={32}>
             <strong>{userName}</strong>, will you take this short survey to find
             the perfect gift for {name}? It’s free, easy, and only takes a
             minute.
-          </P>
+          </Text>
           <Button href="https://thoughfulpost.com">Take the survey</Button>
         </MjmlColumn>
       </MjmlSection>
