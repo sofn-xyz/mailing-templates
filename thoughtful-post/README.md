@@ -1,10 +1,10 @@
-# Lancey + Mailing
+# ThoughtfulPost + Mailing
 
-Templates for [Lancey](https://www.lancey.io)
+Templates for [ThoughtfulPost](https://thoughtfulpost.com)
 
 Built with [Mailing](https://www.mailing.run)
 
-Live at https://lancey-mailing.vercel.app/
+Live at https://thoughtful-post-mailing.vercel.app/
 
 ## Local development
 
