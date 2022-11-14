@@ -25,7 +25,8 @@ yarn dev:local-assets
 They will be served from `http://localhost:3883` and you can use them in your templates like this:
 
 ```javascript
-  import assetUrl from "./util/assetUrl";
+import assetUrl from "./util/assetUrl";
+import { MjmlImage } from "mjml-react";
 
-  <mj-image src={assetUrl("/assets/logo.png")} />
+<MjmlImage src={assetUrl("/assets/logo.png")} />;
 ```
