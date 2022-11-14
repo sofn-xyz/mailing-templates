@@ -1,16 +1,32 @@
-# Thoughtful-Post-Mailing
+# ThoughtfulPost + Mailing
+
+Templates for [ThoughtfulPost](https://thoughtfulpost.com)
+
+Built with [Mailing](https://www.mailing.run)
+
+Live at https://thoughtful-post-mailing.vercel.app/
 
 ## Local development
 
 ```
 yarn install
-yarn mailing
+yarn dev
 ```
 
-## See it Live
+### With local assets
 
-https://thoughtful-post-mailing.vercel.app/
+If you want to use local assets while developing new templates, place them in the `emails/assets` folder and run:
 
-## Designs
+```
+yarn install
+yarn dev:local-assets
+```
 
-https://www.figma.com/file/P0vN4dgc5MV8JKMtNWphvN/thoughtful-post-emails
+They will be served from `http://localhost:3883` and you can use them in your templates like this:
+
+```javascript
+import assetUrl from "./util/assetUrl";
+import { MjmlImage } from "mjml-react";
+
+<MjmlImage src={assetUrl("/assets/logo.png")} />;
+```
