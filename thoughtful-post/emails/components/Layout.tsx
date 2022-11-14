@@ -25,7 +25,7 @@ import {
 import assetUrl from "../util/assetUrl";
 import cssHelpers from "../util/cssHelpers";
 
-export default function Base({ children }: any) {
+export default function Layout({ children }: any) {
   return (
     <Mjml>
       <MjmlHead>

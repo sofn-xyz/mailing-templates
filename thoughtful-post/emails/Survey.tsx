@@ -1,5 +1,5 @@
 import { MjmlSection, MjmlColumn, MjmlImage } from "mjml-react";
-import Base from "./layouts/Base";
+import Layout from "./components/Layout";
 import Button from "./components/Button";
 import Heading from "./components/Heading";
 import Text from "./components/Text";
@@ -13,7 +13,7 @@ type SurveyProps = {
 
 export default function Survey({ name, userName }: SurveyProps) {
   return (
-    <Base>
+    <Layout>
       <MjmlSection
         backgroundColor={colors.white}
         cssClass="gutter"
@@ -43,6 +43,6 @@ export default function Survey({ name, userName }: SurveyProps) {
           <Button href="https://thoughfulpost.com">Take the survey</Button>
         </MjmlColumn>
       </MjmlSection>
-    </Base>
+    </Layout>
   );
 }

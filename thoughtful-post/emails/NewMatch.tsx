@@ -1,5 +1,5 @@
 import { MjmlSection, MjmlColumn, MjmlImage } from "mjml-react";
-import Base from "./layouts/Base";
+import Layout from "./components/Layout";
 import Button from "./components/Button";
 import Heading from "./components/Heading";
 import Cards, { type Card } from "./components/Cards";
@@ -15,7 +15,7 @@ type UpcomingProps = {
 
 export default function Upcoming({ name, gifts, birthday }: UpcomingProps) {
   return (
-    <Base>
+    <Layout>
       <MjmlSection
         backgroundColor={colors.white}
         cssClass="gutter"
@@ -54,6 +54,6 @@ export default function Upcoming({ name, gifts, birthday }: UpcomingProps) {
           <Button>Browse more gifts</Button>
         </MjmlColumn>
       </MjmlSection>
-    </Base>
+    </Layout>
   );
 }
