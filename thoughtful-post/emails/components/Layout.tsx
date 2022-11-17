@@ -89,15 +89,22 @@ export default function Layout({ children }: any) {
           >
             <MjmlColumn>
               <MjmlText fontSize={fontSize.sm} align="center">
-                <strong>Need help?</strong> We’re here for you!{" "}
-                <Link
-                  color={colors.black}
-                  textDecoration="underline"
-                  href="https://thoughtfulpost.typeform.com/contact-us"
-                >
-                  Reach out
-                </Link>{" "}
-                anytime.
+                <strong>Need help?</strong>{" "}
+                <span className="no-wrap">We’re here for you! </span>
+                <span className="no-wrap">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    href="https://thoughtfulpost.typeform.com/contact-us"
+                    style={{
+                      color: colors.black,
+                      textDecoration: "underline",
+                    }}
+                  >
+                    Reach out
+                  </a>{" "}
+                  anytime.
+                </span>
               </MjmlText>
             </MjmlColumn>
           </MjmlSection>

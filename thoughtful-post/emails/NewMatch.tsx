@@ -32,7 +32,7 @@ export default function Upcoming({ name, gifts, birthday }: UpcomingProps) {
             fontSize={fontSize.xxl}
             lg={{ fontSize: fontSize.xxxl }}
             align="center"
-            maxWidth={390}
+            maxWidth={470}
             paddingBottom={28}
           >
             We found 4 more gifts for {name}
