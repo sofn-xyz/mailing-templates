@@ -42,11 +42,13 @@ export default function Upcoming({
             maxWidth={390}
             paddingBottom={28}
           >
-            {name}’s birthday is soon
+            {name}’s
+            <br />
+            birthday is soon
           </Heading>
           <Text align="center" maxWidth={390} paddingBottom={24}>
             <strong>Only 1 week left</strong> until {name}’s birthday on{" "}
-            <span className="no-wrap">{birthday}</span> Let’s find the perfect
+            <span className="no-wrap">{birthday}</span>. Let’s find the perfect
             gift.
           </Text>
 
