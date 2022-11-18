@@ -48,8 +48,8 @@ export default function Text({ children, maxWidth, ...props }: TextProps) {
               >
                 <tr>
                   <td></td>
-                  <td align="center" width={maxWidth} style={textStyle}>
-                    <div>{children}</div>
+                  <td align="center" width="100%" style={textStyle}>
+                    <div style={{ maxWidth }}>{children}</div>
                   </td>
                   <td></td>
                 </tr>
