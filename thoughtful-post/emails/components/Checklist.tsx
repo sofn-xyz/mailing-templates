@@ -28,7 +28,10 @@ export default function Checklist({ items }: CheckListProps) {
               <tr key={index}>
                 <td
                   align="center"
-                  style={{ ...themeDefaults, paddingBottom: 8 }}
+                  style={{
+                    ...themeDefaults,
+                    paddingBottom: index === items.length - 1 ? 0 : 8,
+                  }}
                 >
                   <img
                     height={20}
