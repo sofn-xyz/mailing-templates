@@ -47,19 +47,17 @@ const getStylePropsFromProps = (props: LinkProps): StyleProps => {
 
 export default function Link({ children, ...props }: LinkProps) {
   return (
-    <MjmlText {...props}>
-      <a
-        target="_blank"
-        rel="noopener"
-        {...getHrefPropsFromProps(props)}
-        style={{
-          color: colors.blue,
-          textDecoration: "none",
-          ...getStylePropsFromProps(props),
-        }}
-      >
-        {children}
-      </a>
-    </MjmlText>
+    <a
+      target="_blank"
+      rel="noopener"
+      {...getHrefPropsFromProps(props)}
+      style={{
+        color: colors.blue,
+        textDecoration: "none",
+        ...getStylePropsFromProps(props),
+      }}
+    >
+      {children}
+    </a>
   );
 }

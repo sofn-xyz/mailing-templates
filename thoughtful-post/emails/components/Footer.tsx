@@ -82,8 +82,8 @@ export default function Footer() {
           >
             <Link color={fontColor} href="https://thoughtfulpost.com/">
               Unsubscribe
-            </Link>{" "}
-            ·{" "}
+            </Link>
+            &nbsp;&nbsp; ·&nbsp;&nbsp;
             <Link
               color={fontColor}
               href="https://thoughtfulpost.com/terms-conditions/"
