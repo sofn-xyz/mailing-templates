@@ -34,6 +34,9 @@ export default function Layout({ children }: any) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800"
         />
         <MjmlStyle>{`
+          table, td {
+            table-layout: fixed;
+          }
           .top-section {
             border-radius: ${borderRadius.base}px ${borderRadius.base}px 0 0;
             padding-top: 28px !important;
