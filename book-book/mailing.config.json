@@ -1,0 +1,6 @@
+{
+  "typescript": false,
+  "emailsDir": "./emails",
+  "outDir": "./previews_html",
+  "anonymousId": "b274a8ed-c378-4b15-b967-afdb733717f1"
+}
