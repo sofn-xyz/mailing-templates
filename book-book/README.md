@@ -2,7 +2,7 @@
 
 Built with [Mailing](https://www.mailing.run)
 
-Live at https://bookbook-mailing.vercel.app/
+Live at https://book-book-mailing.vercel.app/
 
 ## Local development
 
