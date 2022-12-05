@@ -45,6 +45,7 @@ const NewsletterSection = ({ children }: { children: React.ReactNode }) => (
       cssClass="margin-gutter gutter"
       backgroundColor={colors.white}
       borderRadius={borderRadius.base}
+      border={`1px solid ${colors.black}`}
     >
       <MjmlColumn paddingBottom={40} paddingTop={40}>
         {children}
