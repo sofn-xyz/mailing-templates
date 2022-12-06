@@ -2,12 +2,17 @@ import { MjmlColumn, MjmlImage, MjmlSection, MjmlWrapper } from "mjml-react";
 import { colors } from "../theme";
 import assetUrl from "../util/assetUrl";
 
-const Header: React.FC = () => {
+type HeaderProps = {
+  border?: boolean;
+};
+
+const Header: React.FC<HeaderProps> = ({ border }) => {
   return (
     <MjmlWrapper
       fullWidth={true}
       padding="32px 0"
       backgroundColor={colors.yellow}
+      borderBottom={border ? `1px solid ${colors.black}` : "none"}
     >
       <MjmlSection cssClass="gutter">
         <MjmlColumn>
