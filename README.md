@@ -4,6 +4,12 @@ This repo is for showcasing email templates built with [Mailing](https://www.mai
 
 <br/><br/>
 
+<img src="https://user-images.githubusercontent.com/609038/206047723-07607402-79e4-4f87-bdb4-9bd0b634776d.png" width="360"/>
+
+### BBeam [Demo](https://bbeam-mailing.vercel.app/) / [Source](https://github.com/sofn-xyz/mailing-templates/tree/main/bbeam)
+
+<br/><br/>
+
 <img src="https://user-images.githubusercontent.com/609038/205967820-0f454567-1cf8-4828-b5e0-7be4366d6a7d.png" width="360"/>
 
 ### Fynn [Demo](https://fynn-mailing.vercel.app/) / [Source](https://github.com/sofn-xyz/mailing-templates/tree/main/fynn)
