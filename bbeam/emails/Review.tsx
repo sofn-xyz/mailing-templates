@@ -96,7 +96,7 @@ const ReviewButton = (value: "thumbsUp" | "thumbsDown") => {
 export default function Review({ email, name }: ReviewProps) {
   return (
     <Layout>
-      <Header border />
+      <Header />
 
       <MjmlWrapper fullWidth={true} backgroundColor={colors.white}>
         <MjmlSection cssClass="gutter" paddingTop={64} paddingBottom={48}>

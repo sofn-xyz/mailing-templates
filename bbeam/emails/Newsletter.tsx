@@ -16,11 +16,7 @@ type NewsletterProps = {
 
 const Header = () => {
   return (
-    <MjmlWrapper
-      fullWidth={true}
-      padding="32px 20px"
-      backgroundColor={colors.yellow}
-    >
+    <MjmlWrapper fullWidth padding="32px 20px">
       <MjmlSection cssClass="gutter">
         <MjmlColumn>
           <MjmlImage
@@ -39,21 +35,28 @@ const Header = () => {
   );
 };
 
-const NewsletterSection = ({ children }: { children: React.ReactNode }) => (
+const NewsletterSection = ({
+  bottomPadding,
+  children,
+}: {
+  bottomPadding?: string | number;
+  children: React.ReactNode;
+}) => (
   <>
-    <MjmlSection
-      cssClass="margin-gutter gutter"
-      backgroundColor={colors.white}
-      borderRadius={borderRadius.base}
-      border={`1px solid ${colors.black}`}
-    >
-      <MjmlColumn paddingBottom={40} paddingTop={40}>
-        {children}
-      </MjmlColumn>
-    </MjmlSection>
+    <MjmlWrapper cssClass="gutter" border={`1px solid ${colors.black}`}>
+      <MjmlSection
+        backgroundColor={colors.white}
+        borderRadius={borderRadius.base}
+        cssClass="gutter"
+      >
+        <MjmlColumn paddingBottom={40} paddingTop={40}>
+          {children}
+        </MjmlColumn>
+      </MjmlSection>
+    </MjmlWrapper>
     <MjmlSection>
       <MjmlColumn>
-        <Spacer height={24} />
+        <Spacer height={bottomPadding || 24} />
       </MjmlColumn>
     </MjmlSection>
   </>
@@ -61,128 +64,117 @@ const NewsletterSection = ({ children }: { children: React.ReactNode }) => (
 
 export default function Newsletter({ email }: NewsletterProps) {
   return (
-    <Layout>
+    <Layout backgroundColor={colors.yellow}>
       <Header />
+      <NewsletterSection>
+        <Heading fontSize={fontSize.xxl} paddingBottom={32}>
+          Here’s space for a headline
+        </Heading>
 
-      <MjmlWrapper
-        fullWidth={true}
-        backgroundColor={colors.yellow}
-        paddingBottom={32}
-        cssClass="gutter newsletter-gutter"
-      >
-        <NewsletterSection>
-          <Heading fontSize={fontSize.xxl} paddingBottom={32}>
-            Here’s space for a headline
-          </Heading>
+        <MjmlImage
+          width="536px"
+          align="center"
+          src={assetUrl("/assets/placeholder-image.png")}
+          paddingBottom={28}
+        />
 
-          <MjmlImage
-            width="536px"
-            align="center"
-            src={assetUrl("/assets/placeholder-image.png")}
-            paddingBottom={28}
-          />
+        <Text
+          paddingBottom={20}
+          fontSize={fontSize.lg}
+          lineHeight={lineHeight.loose}
+        >
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo.
+        </Text>
+        <Text
+          paddingBottom={20}
+          fontSize={fontSize.lg}
+          lineHeight={lineHeight.loose}
+        >
+          <strong>Nemo enim ipsam voluptatem.</strong> Quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+          qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </Text>
 
-          <Text
-            paddingBottom={20}
-            fontSize={fontSize.lg}
-            lineHeight={lineHeight.loose}
-          >
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
-          </Text>
-          <Text
-            paddingBottom={20}
-            fontSize={fontSize.lg}
-            lineHeight={lineHeight.loose}
-          >
-            <strong>Nemo enim ipsam voluptatem.</strong> Quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-            pariatur?
-          </Text>
+        <List
+          items={[
+            "Temporibus autem quibusdam et aut",
+            "Officiis debitis aut rerumnecessitatibus",
+            "Saepe eveniet ut et voluptates repudiandae",
+            "Sint et molestiae non recusandae",
+          ]}
+        />
 
-          <List
-            items={[
-              "Temporibus autem quibusdam et aut",
-              "Officiis debitis aut rerumnecessitatibus",
-              "Saepe eveniet ut et voluptates repudiandae",
-              "Sint et molestiae non recusandae",
-            ]}
-          />
+        <Text
+          paddingTop={20}
+          paddingBottom={32}
+          fontSize={fontSize.lg}
+          lineHeight={lineHeight.loose}
+        >
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo.
+        </Text>
+        <Button href="#" fontSize={fontSize.lg}>
+          Call to action
+        </Button>
+      </NewsletterSection>
+      <NewsletterSection>
+        <Heading
+          fontSize={fontSize.base}
+          color={colors.black}
+          paddingBottom={24}
+          textTransform="uppercase"
+          lg={{ paddingLeft: 8 }}
+        >
+          Keyword
+        </Heading>
 
-          <Text
-            paddingTop={20}
-            paddingBottom={32}
-            fontSize={fontSize.lg}
-            lineHeight={lineHeight.loose}
-          >
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
-          </Text>
-          <Button href="#" fontSize={fontSize.lg}>
-            Call to action
-          </Button>
-        </NewsletterSection>
+        <MjmlImage
+          width="536px"
+          align="center"
+          src={assetUrl("/assets/placeholder-image.png")}
+          paddingBottom={28}
+        />
 
-        <NewsletterSection>
-          <Heading
-            fontSize={fontSize.base}
-            color={colors.black}
-            paddingBottom={24}
-            textTransform="uppercase"
-            lg={{ paddingLeft: 8 }}
-          >
-            Keyword
-          </Heading>
+        <Text fontSize={fontSize.lg} lineHeight={lineHeight.loose}>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam,{" "}
+          <Link href="#">eaque ipsa quae</Link> ab illo{" "}
+          <Link href="#">inventore veritatis</Link> et quasi architecto beatae
+          vitae dicta sunt explicabo.
+        </Text>
+      </NewsletterSection>
+      <NewsletterSection bottomPadding={56}>
+        <Heading fontSize={fontSize.xxl} paddingBottom={24}>
+          Here’s space for a headline
+        </Heading>
 
-          <MjmlImage
-            width="536px"
-            align="center"
-            src={assetUrl("/assets/placeholder-image.png")}
-            paddingBottom={28}
-          />
+        <Text
+          paddingBottom={28}
+          fontSize={fontSize.lg}
+          lineHeight={lineHeight.loose}
+        >
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo.
+        </Text>
 
-          <Text fontSize={fontSize.lg} lineHeight={lineHeight.loose}>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam,{" "}
-            <Link href="#">eaque ipsa quae</Link> ab illo{" "}
-            <Link href="#">inventore veritatis</Link> et quasi architecto beatae
-            vitae dicta sunt explicabo.
-          </Text>
-        </NewsletterSection>
-
-        <NewsletterSection>
-          <Heading fontSize={fontSize.xxl} paddingBottom={24}>
-            Here’s space for a headline
-          </Heading>
-
-          <Text
-            paddingBottom={28}
-            fontSize={fontSize.lg}
-            lineHeight={lineHeight.loose}
-          >
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
-          </Text>
-
-          <Button secondary href="#" fontSize={fontSize.lg} width="100%">
-            Read more &rarr;
-          </Button>
-        </NewsletterSection>
-      </MjmlWrapper>
+        <Button secondary href="#" fontSize={fontSize.lg} width="100%">
+          Read more &rarr;
+        </Button>
+      </NewsletterSection>
 
       <Footer email={email} />
     </Layout>
