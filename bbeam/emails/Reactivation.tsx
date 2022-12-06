@@ -21,7 +21,7 @@ export default function Reactivation({ email }: ReactivationProps) {
       <MjmlWrapper fullWidth={true} backgroundColor={colors.yellow}>
         <MjmlSection cssClass="gutter">
           <MjmlColumn>
-            <Spacer lg={{ height: 96 }} sm={{ height: 62 }} />
+            <Spacer lg={{ height: 64 }} sm={{ height: 32 }} />
           </MjmlColumn>
         </MjmlSection>
 
@@ -33,7 +33,14 @@ export default function Reactivation({ email }: ReactivationProps) {
         >
           <MjmlColumn paddingBottom={96}>
             <Spacer lg={{ height: 214 }} sm={{ height: 158 }} />
-            <Heading fontSize={54} maxWidth={430} paddingBottom={24}>
+            <Heading
+              fontSize={36}
+              maxWidth={430}
+              paddingBottom={24}
+              lg={{
+                fontSize: fontSize.xxxl,
+              }}
+            >
               We haven’t seen you in a while.
             </Heading>
             <Text paddingBottom={36} maxWidth={478} fontSize={fontSize.xl}>

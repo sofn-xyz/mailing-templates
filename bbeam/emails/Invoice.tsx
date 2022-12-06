@@ -112,7 +112,7 @@ export default function Invoice({ email, name, invoice }: InvoiceProps) {
         <MjmlSection cssClass="gutter" paddingTop={64} paddingBottom={8}>
           <MjmlColumn>
             <Heading
-              fontSize={fontSize.xxl}
+              fontSize={fontSize.xxxl}
               paddingBottom={24}
               color={colors.black}
               maxWidth={420}
@@ -122,7 +122,7 @@ export default function Invoice({ email, name, invoice }: InvoiceProps) {
             >
               Thanks for using BBeam
             </Heading>
-            <Text fontSize={fontSize.xxl} color={colors.black} maxWidth={412}>
+            <Text fontSize={fontSize.xl} color={colors.black} maxWidth={412}>
               Your subscription continues and you’ve been charged.
             </Text>
           </MjmlColumn>
@@ -156,15 +156,24 @@ export default function Invoice({ email, name, invoice }: InvoiceProps) {
         <MjmlSection cssClass="gutter">
           <MjmlGroup>
             <MjmlColumn>
-              <Heading fontSize={fontSize.xxxl} paddingBottom={24}>
+              <Heading
+                fontSize={fontSize.xxl}
+                paddingBottom={24}
+                lg={{
+                  fontSize: fontSize.xxxl,
+                }}
+              >
                 Total
               </Heading>
             </MjmlColumn>
             <MjmlColumn>
               <Heading
-                fontSize={fontSize.xxxl}
+                fontSize={fontSize.xxl}
                 paddingBottom={24}
                 align="right"
+                lg={{
+                  fontSize: fontSize.xxxl,
+                }}
               >
                 {dollarFormatter.format(invoice.total)}
               </Heading>

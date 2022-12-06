@@ -27,12 +27,12 @@ const ReviewButton = (value: "thumbsUp" | "thumbsDown") => {
     thumbsUp: {
       url: "#",
       imageSrc: assetUrl("/assets/thumbsup.png"),
-      text: "It was great",
+      text: "Good",
     },
     thumbsDown: {
       url: "#",
       imageSrc: assetUrl("/assets/thumbsdown.png"),
-      text: "Not so great",
+      text: "Not good",
     },
   };
   return (
@@ -75,7 +75,7 @@ const ReviewButton = (value: "thumbsUp" | "thumbsDown") => {
                   <p
                     style={{
                       fontFamily: fontFamily.sans,
-                      fontSize: fontSize.base,
+                      fontSize: fontSize.sm,
                       textDecoration: "none",
                       textTransform: "uppercase",
                       color: colors.white,
@@ -135,7 +135,7 @@ export default function Review({ email, name }: ReviewProps) {
             <MjmlColumn paddingRight={"6px"}>
               {ReviewButton("thumbsUp")}
             </MjmlColumn>
-            <MjmlColumn paddingLeft={"12px"}>
+            <MjmlColumn paddingLeft={"6px"}>
               {ReviewButton("thumbsDown")}
             </MjmlColumn>
           </MjmlGroup>
