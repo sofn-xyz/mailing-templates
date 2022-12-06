@@ -1,6 +1,6 @@
-# Beam + Mailing
+# BBeam + Mailing
 
-Templates for Beam
+Templates for BBeam
 
 Built with [Mailing](https://www.mailing.run)
 
