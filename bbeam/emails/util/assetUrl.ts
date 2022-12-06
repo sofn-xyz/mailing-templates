@@ -5,7 +5,7 @@
  * NOTE: This will cause the email linter to throw errors
  */
 
-const ASSET_URL = "https://bgf1zhnwzwfrzxi.vercel.app";
+const ASSET_URL = "https://bbeam-mailing.vercel.app";
 
 export default function assetUrl(url: string) {
   if (url.startsWith("/") && !process.env.LOCAL_ASSETS) {
