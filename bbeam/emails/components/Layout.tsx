@@ -11,10 +11,11 @@ import { colors, spacing, screens, themeDefaults } from "../theme";
 import cssHelpers from "../util/cssHelpers";
 
 type LayoutProps = {
+  backgroundColor?: string;
   children: React.ReactNode;
 };
 
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ children, backgroundColor }: LayoutProps) {
   return (
     <Mjml>
       <MjmlHead>
@@ -33,18 +34,10 @@ export default function Layout({ children }: LayoutProps) {
             padding-left: ${spacing.mobileGutter}px !important;
             padding-right: ${spacing.mobileGutter}px !important;
           }
-          .margin-gutter {
-            margin-left: ${spacing.mobileGutter}px !important;
-            margin-right: ${spacing.mobileGutter}px !important;
-          }
           @media (min-width: ${screens.xs}) {
             .gutter {
               padding-left: ${spacing.desktopGutter}px !important;
               padding-right: ${spacing.desktopGutter}px !important;
-            }
-            .margin-gutter {
-              margin-left: ${spacing.desktopGutter}px !important;
-              margin-right: ${spacing.desktopGutter}px !important;
             }
           }
 
@@ -55,7 +48,9 @@ export default function Layout({ children }: LayoutProps) {
         </MjmlAttributes>
       </MjmlHead>
 
-      <MjmlBody width={600}>{children}</MjmlBody>
+      <MjmlBody width={600} backgroundColor={backgroundColor}>
+        {children}
+      </MjmlBody>
     </Mjml>
   );
 }

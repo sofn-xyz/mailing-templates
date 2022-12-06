@@ -120,7 +120,7 @@ export default function Review({ email, name }: ReviewProps) {
             </MjmlColumn>
           </MjmlGroup>
         </MjmlSection>
-        <MjmlSection>
+        <MjmlSection cssClass="gutter">
           <MjmlColumn>
             <MjmlDivider borderWidth={1} borderColor={colors.black} />
           </MjmlColumn>
