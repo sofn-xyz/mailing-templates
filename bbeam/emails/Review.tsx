@@ -5,6 +5,7 @@ import {
   MjmlGroup,
   MjmlWrapper,
   MjmlRaw,
+  MjmlImage,
 } from "mjml-react";
 import Layout from "./components/Layout";
 import Button from "./components/Button";
@@ -96,7 +97,26 @@ const ReviewButton = (value: "thumbsUp" | "thumbsDown") => {
 export default function Review({ email, name }: ReviewProps) {
   return (
     <Layout>
-      <Header border />
+      <Header />
+
+      <MjmlWrapper
+        fullWidth={true}
+        backgroundColor={colors.white}
+        backgroundUrl={assetUrl("/assets/review-strip.png")}
+        backgroundSize="100% 1px"
+      >
+        <MjmlSection cssClass="gutter">
+          <MjmlColumn>
+            <MjmlImage
+              src={assetUrl("/assets/review-nudge.png")}
+              height={1}
+              width={1}
+              align="right"
+              paddingTop={0}
+            />
+          </MjmlColumn>
+        </MjmlSection>
+      </MjmlWrapper>
 
       <MjmlWrapper fullWidth={true} backgroundColor={colors.white}>
         <MjmlSection cssClass="gutter" paddingTop={64} paddingBottom={48}>
