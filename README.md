@@ -1,4 +1,10 @@
-# Mailing Templates
+<br/>
+<img src="https://user-images.githubusercontent.com/609038/206747937-74206c35-0587-4a2f-a744-126ea356756f.png#gh-dark-mode-only" alt="Mailing logo" width="295" height="64"/>
+<img src="https://user-images.githubusercontent.com/609038/206747927-112e3d23-e5e6-4f7c-950b-4490b7c4bbe8.png#gh-light-mode-only" alt="Mailing logo" width="295" height="64"/>
+
+<br/>
+
+# Templates
 
 This repo is for showcasing email templates built with [Mailing](https://www.mailing.run). Built some cool templates you want to share with the community? Submit a PR adding it to the list.
 
