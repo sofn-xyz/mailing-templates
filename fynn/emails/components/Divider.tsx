@@ -1,5 +1,5 @@
 import { MjmlDivider } from "mjml-react";
-import { colors } from "./theme";
+import { colors } from "../theme";
 
 export default function Divider() {
   return (

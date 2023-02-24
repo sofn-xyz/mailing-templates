@@ -2,7 +2,7 @@ import { MjmlText, MjmlImage, MjmlSpacer } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
 import Divider from "./components/Divider";
 import Button from "./components/Button";
-import { colors } from "./components/theme";
+import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
 import P from "./components/P";
 import Headline from "./components/Headline";

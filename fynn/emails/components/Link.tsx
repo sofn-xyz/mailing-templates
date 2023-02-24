@@ -1,4 +1,4 @@
-import { colors } from "./theme";
+import { colors } from "../theme";
 
 export default function Link(props: any) {
   return (

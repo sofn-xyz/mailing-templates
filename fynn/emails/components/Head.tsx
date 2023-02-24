@@ -12,12 +12,9 @@ import {
   colors,
   borderRadius,
   spacing,
-} from "./theme";
+} from "../theme";
 
-type HeadProps = {
-  children?: any;
-};
-export default function Head({ children }: HeadProps) {
+export default function Head() {
   return (
     <MjmlHead>
       <MjmlFont
@@ -106,9 +103,9 @@ export default function Head({ children }: HeadProps) {
           lineHeight={lineHeight.base}
           fontSize={fontSize.base}
           color={colors.black}
+          padding={0}
         />
       </MjmlAttributes>
-      {children}
     </MjmlHead>
   );
 }

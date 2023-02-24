@@ -1,5 +1,5 @@
 import { MjmlButton } from "mjml-react";
-import { colors, fontSize, lineHeight, borderRadius } from "./theme";
+import { colors, fontSize, lineHeight, borderRadius } from "../theme";
 
 type ButtonProps = {
   href: string;
