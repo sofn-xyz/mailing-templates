@@ -1,6 +1,6 @@
 import { MjmlImage } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
-import { colors } from "./theme";
+import { colors } from "./components/theme";
 import assetUrl from "./util/assetUrl";
 import P from "./components/P";
 import Headline from "./components/Headline";

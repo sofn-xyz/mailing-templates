@@ -46,9 +46,7 @@ const InvoiceRow = ({
   );
 };
 
-const dollarFormatter = new Intl.NumberFormat("en", {
-  maximumFractionDigits: 0,
-  minimumFractionDigits: 0,
+const dollarFormatter = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD",
 });

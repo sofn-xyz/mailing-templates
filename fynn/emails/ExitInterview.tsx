@@ -24,7 +24,7 @@ import {
   themeDefaults,
   fontWeight,
   lineHeight,
-} from "./theme";
+} from "./components/theme";
 import Headline from "./components/Headline";
 import Link from "./components/Link";
 import Footer from "./components/Footer";

@@ -1,5 +1,5 @@
 import { MjmlText } from "mjml-react";
-import { fontSize, fontFamily, lineHeight } from "../theme";
+import { fontSize, fontFamily, lineHeight } from "./theme";
 
 type HeadlineProps = {
   cssClass?: string;

@@ -10,7 +10,7 @@ import {
 import Head from "./Head";
 import Footer from "./Footer";
 import assetUrl from "../util/assetUrl";
-import { colors, fontSize } from "../theme";
+import { colors, fontSize } from "./theme";
 import P from "./P";
 
 type BaseLayoutProps = {

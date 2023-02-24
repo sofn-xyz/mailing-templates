@@ -12,7 +12,7 @@ import {
   colors,
   borderRadius,
   spacing,
-} from "../theme";
+} from "./theme";
 
 export default function Head() {
   return (

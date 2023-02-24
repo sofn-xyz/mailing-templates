@@ -1,5 +1,5 @@
 import { MjmlSection, MjmlColumn, MjmlText, MjmlImage } from "mjml-react";
-import { colors, fontSize } from "../theme";
+import { colors, fontSize } from "./theme";
 import assetUrl from "../util/assetUrl";
 
 export default function Footer() {
