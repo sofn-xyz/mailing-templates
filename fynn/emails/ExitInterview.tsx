@@ -76,7 +76,7 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
             display: inline-block !important;
           }
           .callout-right-col {
-            width: 162px;
+            width: 158px;
           }
           .gutter {
             padding-left: ${spacing.desktopGutter}px !important;
@@ -143,6 +143,9 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
             border-bottom-left-radius: ${borderRadius.base}px;
             border-bottom-right-radius: ${borderRadius.base}px;
           }
+          .bb-mw {
+            max-width: 240px;
+          }
 
           @media (max-width:480px) {
             .footer td {
@@ -163,6 +166,9 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
             }
             .header-xl div{
               font-size: 30px !important;
+            }
+            .bb-mw {
+              max-width: none !important;
             }
             .sm-hidden {
               display: none;
@@ -218,7 +224,7 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
                 paddingTop="0px"
                 align={"left"}
               />
-              <Spacer lg={{ height: 72 }} sm={{ height: 48 }} />
+              <Spacer lg={{ height: 64 }} sm={{ height: 32 }} />
               <Headline cssClass="header-xl" paddingBottom="0">
                 Here are your Exit Counseling takeaways
               </Headline>
@@ -239,12 +245,13 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
                       alt=""
                       height="66px"
                       width="146px"
-                      style={{ padding: "0 40px" }}
+                      style={{ padding: "0 32px" }}
                       className="group-img"
                     />
                   </td>
                   <td valign="middle">
                     <p
+                      className="bb-mw"
                       style={{
                         ...themeDefaults,
                         fontSize: fontSize.sm,
@@ -281,7 +288,7 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
 
           <MjmlSection
             cssClass="middle-section gutter"
-            paddingBottom={32}
+            paddingBottom={24}
             textAlign="left"
           >
             <MjmlColumn>
@@ -528,6 +535,7 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
                         borderRadius: borderRadius.small,
                         border: `1px solid ${colors.grayDark}`,
                         fontSize: fontSize.xs,
+                        borderCollapse: "separate",
                       }}
                     >
                       <tr>
@@ -557,12 +565,13 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
                           a month.
                         </td>
                       </tr>
-                      <tr style={{ borderTop: `1px solid ${colors.grayDark}` }}>
+                      <tr>
                         <td
                           className="sm-hidden"
                           style={{
                             padding: "16px 0 16px 31px",
                             textAlign: "center",
+                            borderTop: `1px solid ${colors.grayDark}`,
                           }}
                           valign="middle"
                           width={40}
@@ -577,6 +586,7 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
                         <td
                           style={{
                             padding: "16px 31px",
+                            borderTop: `1px solid ${colors.grayDark}`,
                           }}
                           valign="middle"
                         >
@@ -648,7 +658,6 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
                 <tr>
                   <td>
                     <table
-                      border={0}
                       cellPadding={0}
                       cellSpacing={0}
                       role="presentation"
@@ -659,6 +668,7 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
                         borderRadius: borderRadius.small,
                         border: `1px solid ${colors.grayDark}`,
                         fontSize: fontSize.xs,
+                        borderCollapse: "separate",
                       }}
                     >
                       <tr>
