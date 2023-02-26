@@ -31,8 +31,8 @@ export default function BaseLayout({
         <MjmlWrapper fullWidth={true} padding="32px 20px">
           <MjmlSection paddingBottom="0px" cssClass="main top-section gutter">
             <MjmlColumn
-              paddingTop="7px"
-              paddingBottom="32px"
+              paddingTop={24}
+              paddingBottom={32}
               backgroundColor={colors.white}
               cssClass="top-column"
             >
@@ -42,9 +42,7 @@ export default function BaseLayout({
                 alt="Fynn Logo"
                 height="28px"
                 width="63px"
-                paddingTop="0px"
                 align={centerLogo ? "center" : "left"}
-                padding="0"
               />
               {children}
               <P>
@@ -54,7 +52,7 @@ export default function BaseLayout({
               </P>
             </MjmlColumn>
           </MjmlSection>
-          <MjmlSection padding="0" cssClass="bottom-section gutter">
+          <MjmlSection cssClass="bottom-section gutter">
             <MjmlColumn
               padding="24px 0"
               backgroundColor={colors.black}
@@ -64,7 +62,6 @@ export default function BaseLayout({
                 color={colors.white}
                 fontSize={fontSize.sm}
                 align="center"
-                padding="0"
               >
                 <b>Questions?</b> Email us at{" "}
                 <a href="mailto:help@fynncredit.com">help@fynncredit.com</a> or

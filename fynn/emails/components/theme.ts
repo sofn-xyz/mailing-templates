@@ -10,6 +10,7 @@ export const colors = {
   white: "#FFF",
   beige: "#F8F6F9",
   gray: "#EEEEEE",
+  grayDark: "#E0E0E0",
 };
 export const fontSize = {
   xs: 12,
@@ -18,11 +19,17 @@ export const fontSize = {
   lg: 30,
   xl: 36,
 };
+export const fontWeight = {
+  normal: 400,
+  bold: 700,
+};
 export const lineHeight = {
   tight: "120%",
+  snug: "137.5%",
   base: "150%",
 };
 export const borderRadius = {
+  small: 4,
   base: 16,
   full: 9999,
 };
@@ -35,4 +42,13 @@ export const spacing = {
   mjmlDefault: 25,
   desktopGutter: 32,
   mobileGutter: 20,
+};
+
+export const themeDefaults = {
+  fontFamily: fontFamily.sans,
+  fontWeight: fontWeight.normal,
+  lineHeight: lineHeight.base,
+  fontSize: fontSize.base,
+  color: colors.black,
+  padding: 0,
 };

@@ -5,7 +5,8 @@
  * NOTE: This will cause the email linter to throw errors
  */
 
-const ASSET_URL = "https://fynn-mailing.vercel.app";
+const ASSET_URL =
+  "https://raw.githubusercontent.com/sofn-xyz/mailing-templates/main/fynn/emails";
 
 export default function assetUrl(url: string) {
   if (url.startsWith("/") && !process.env.LOCAL_ASSETS) {

@@ -5,7 +5,7 @@ import assetUrl from "../util/assetUrl";
 export default function Footer() {
   return (
     <>
-      <MjmlSection paddingBottom={"0px"}>
+      <MjmlSection paddingBottom={24} paddingTop={40}>
         <MjmlColumn width="50px" cssClass="social-icon">
           <MjmlImage
             href="https://twitter.com/fynncredit"
@@ -13,7 +13,6 @@ export default function Footer() {
             alt="Twitter Logo"
             height="40px"
             width="40px"
-            padding="0"
           />
         </MjmlColumn>
         <MjmlColumn width="50px" cssClass="social-icon">
@@ -23,13 +22,17 @@ export default function Footer() {
             alt="Instagram Logo"
             height="40px"
             width="40px"
-            padding="0"
           />
         </MjmlColumn>
       </MjmlSection>
-      <MjmlSection cssClass="footer smooth">
+      <MjmlSection cssClass="footer smooth" paddingBottom={32}>
         <MjmlColumn>
-          <MjmlText fontSize={fontSize.xs} color={colors.black} align="center">
+          <MjmlText
+            fontSize={fontSize.xs}
+            color={colors.black}
+            align="center"
+            paddingBottom={32}
+          >
             © Fynn, Inc. All Rights Reserved.
             <br />
             1800 Fynn Street · Suite 5000 · New York, NY 10010
@@ -39,7 +42,12 @@ export default function Footer() {
               Terms of Use
             </a> · <a href="https://fynncredit.com/privacy">Privacy Policy</a>
           </MjmlText>
-          <MjmlText fontSize={fontSize.xs} color={colors.black} align="center">
+          <MjmlText
+            fontSize={fontSize.xs}
+            color={colors.black}
+            align="center"
+            paddingBottom={20}
+          >
             Loans are originated by Fynn, Inc. (“Fynn”), and the loans are not
             endorsed by any schools. Fynn is also not affiliated with any
             school. Fynn’s loans are private loans, and they do not have the
@@ -47,18 +55,33 @@ export default function Footer() {
             federal loan programs, other private lenders, or school-based
             financing options
           </MjmlText>
-          <MjmlText fontSize={fontSize.xs} color={colors.black} align="center">
+          <MjmlText
+            fontSize={fontSize.xs}
+            color={colors.black}
+            align="center"
+            paddingBottom={20}
+          >
             Annual Percentage Rates (“APRs”) on loans range from 7.99% to
             28.99%. Actual APRs may vary based on several factors, including
             your educational program, your state of residence, applicable
             lending laws and regulations, your credit history, and any
             applicable fees.
           </MjmlText>
-          <MjmlText fontSize={fontSize.xs} color={colors.black} align="center">
+          <MjmlText
+            fontSize={fontSize.xs}
+            color={colors.black}
+            align="center"
+            paddingBottom={20}
+          >
             Applicable fees and interest rates are outlined in your loan
             documentation, including your loan disclosures and credit agreement.
           </MjmlText>
-          <MjmlText fontSize={fontSize.xs} color={colors.black} align="center">
+          <MjmlText
+            fontSize={fontSize.xs}
+            color={colors.black}
+            align="center"
+            paddingBottom={20}
+          >
             Consumers may contact Fynn by email at:{" "}
             <a href="mailto:help@fynncredit.com">help@fynncredit.com</a>.
           </MjmlText>
