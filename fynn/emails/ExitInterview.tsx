@@ -224,7 +224,7 @@ const ExitInterview = ({ loanInfo }: { loanInfo: LoanInfo }) => {
                 paddingTop="0px"
                 align={"left"}
               />
-              <Spacer lg={{ height: 64 }} sm={{ height: 32 }} />
+              <Spacer lg={{ height: 48 }} sm={{ height: 32 }} />
               <Headline cssClass="header-xl" paddingBottom="0">
                 Here are your Exit Counseling takeaways
               </Headline>
